@@ -21,19 +21,30 @@
 <body>
     <div class="container">
         <form class="col-md-6 m-auto py-5">
+
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <input id="input-city-field" type="text" class="form-control"
+                    placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button id="input-city-field" onclick="getCity()" type="button"
-                        class="btn btn-danger">Search</button>
+                    <button onclick="getCity()" type="button" class="btn btn-danger">Search</button>
                 </div>
+
+            </div>
+
+            <div id="input-append">
+                <!-- <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div> -->
             </div>
         </form>
         <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1 id="city-name">Dhaka</h1>
-            <h3><span id="temp-number">38.06</span>&deg;C</h3>
-            <h1 id="sky-condition" class="lead">Clouds</h1>
+            <div id="description">
+
+            </div>
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="city-name">City Name</h1>
+            <h3><span id="temp-number">00</span>&deg;C</h3>
+            <h1 id="sky-condition" class="lead">Sky</h1>
         </div>
     </div>
 
