@@ -1,3 +1,5 @@
+
+
 const getCity = () => {
 	const city = document.getElementById('input-city-field').value;
 	document.getElementById('input-city-field').value = "";
@@ -26,6 +28,9 @@ const displayError = error => {
 }
 
 const getTemperature = (tempa) => {
+	// clear main icon
+	document.getElementById('weather-icon').style.display = 'none';
+	// document.getElementById('icon-class').textContent = "";
 	// clear alerts
 	document.getElementById("input-append").textContent = "";
 
